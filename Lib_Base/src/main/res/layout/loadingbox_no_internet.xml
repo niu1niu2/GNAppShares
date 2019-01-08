@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@color/background_bg"
+    android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|clip_vertical|clip_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:id="@+id/exception_wrapper"
+            android:layout_width ="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/divider_px200"
+                    android:layout_height="@dimen/divider_px1"
+                    android:background="@color/title_color90"/>
+
+                <ImageView
+                    android:layout_width="@dimen/divider_px160"
+                    android:layout_height="@dimen/divider_px160"
+                    android:src="@mipmap/common_icon_loadfailed"
+                    android:layout_marginLeft="@dimen/divider_px40"
+                    android:layout_marginRight="@dimen/divider_px40"/>
+
+                <View
+                    android:layout_width="@dimen/divider_px200"
+                    android:layout_height="@dimen/divider_px1"
+                    android:background="@color/title_color90"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/exception_message"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="加载失败，请检查下网络吧！"
+                android:layout_marginTop="@dimen/divider_px80"
+                android:textSize="@dimen/divider_px26"
+                android:textColor="@color/title_color"/>
+
+            <Button
+                android:id="@+id/exception_button"
+                android:layout_width="@dimen/divider_px240"
+                android:layout_height="@dimen/divider_px100"
+                android:text="重试"
+                android:textColor="@color/title_color"
+                android:background="@color/like_num_color"
+                android:layout_marginTop="@dimen/divider_px120"
+                android:layout_centerHorizontal="true"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

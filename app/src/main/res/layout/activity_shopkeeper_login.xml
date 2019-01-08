@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.guinong.fresh.ui.splash.activity.ShopkeeperLoginActivity">
+
+    <include layout="@layout/include_common_top_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_px66"
+        android:background="@mipmap/icon_wihte_square"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/divider_px48">
+
+        <TextView
+            style="@style/text_s_30_c_101010_g_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86" />
+
+        <ImageView
+            android:layout_width="@dimen/divider_px40"
+            android:layout_height="@dimen/divider_px40"
+            android:layout_marginLeft="@dimen/divider_px20"
+            android:src="@mipmap/icon_more_down" />
+
+        <TextView
+            style="@style/text_s_28_c_999999_g_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/divider_px30"
+            android:text="1359458248" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_px44"
+        android:background="@mipmap/icon_wihte_square"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/divider_px48">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入短信验证码" />
+
+        <TextView
+            style="@style/text_s_28_c_999999_g_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/divider_px30"
+            android:background="@mipmap/icon_back_wihte_10"
+            android:gravity="center"
+            android:text="获取验证码" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/divider_px48"
+        android:layout_marginTop="@dimen/divider_px15">
+
+        <ImageView
+            android:layout_width="@dimen/divider_px30"
+            android:layout_height="@dimen/divider_px30"
+            android:src="@mipmap/icon_argree" />
+
+        <TextView
+            style="@style/text_s_24_c_666666_g_center"
+            android:layout_marginLeft="@dimen/divider_px10"
+            android:text="同意" />
+
+        <TextView
+
+            style="@style/text_s_24_c_000000_g_center"
+            android:layout_marginLeft="@dimen/divider_px10"
+            android:text="贵农网用户协议  用户隐私政策"
+            android:textSize="@dimen/divider_px24" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_s_20_c_c_E60012_g_center"
+        android:layout_marginLeft="@dimen/divider_px48"
+        android:layout_marginTop="@dimen/divider_px20"
+        android:text="你输入的验证码有误"
+        android:textSize="@dimen/divider_px24" />
+
+    <TextView
+        style="@style/text_s_30_c_ffffff_g_center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/divider_px10"
+        android:layout_marginTop="@dimen/divider_px184"
+        android:background="@mipmap/icon_finish"
+        android:gravity="center"
+        android:text="完成" />
+</LinearLayout>

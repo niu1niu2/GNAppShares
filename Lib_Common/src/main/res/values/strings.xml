@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="network_error">网络错误</string>
+    <string name="network_off">网络断开</string>
+    <string name="data_error">数据异常</string>
+    <string name="unknown_error">未知异常</string>
+    <string name="parms_error">参数错误</string>
+
+</resources>

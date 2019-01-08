@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_login_back"
+    tools:context="com.guinong.fresh.ui.splash.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/divider_px136"
+            android:layout_height="@dimen/divider_px120"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/divider_px98"
+            android:src="@mipmap/icon_login_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/divider_px26"
+            android:text="贵农生鲜店长版"
+            android:textColor="@color/ysf_grey_999999"
+            android:textSize="@dimen/divider_px36" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/divider_px100"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_sallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_px26"
+            android:background="@mipmap/icon_login_yeolle"
+            android:gravity="center"
+            android:text="店长登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/divider_px30" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/divider_px94"
+            android:layout_marginTop="@dimen/divider_px26"
+            android:layout_toRightOf="@id/tv_sallet"
+            android:background="@mipmap/icon_login_white"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/divider_px30" />
+    </RelativeLayout>
+
+</RelativeLayout>

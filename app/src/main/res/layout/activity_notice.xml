@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.guinong.fresh.ui.splash.activity.NoticeActivity">
+
+    <include layout="@layout/include_common_top_title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="@dimen/divider_px48"
+        android:layout_marginRight="@dimen/divider_px48"
+        android:background="@drawable/shap_more_phone_bac_10_ffffff_stroe_d7d7d7d"
+        android:text="开店条例
+1.模拟文本模拟文本模拟文本模拟文本；
+2.模拟文本模拟文本模拟文本模拟文本；
+" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/divider_px48"
+        android:layout_marginTop="@dimen/divider_px20">
+
+        <ImageView
+            android:layout_width="@dimen/divider_px30"
+            android:layout_height="@dimen/divider_px30"
+            android:src="@mipmap/icon_argree" />
+
+        <TextView
+            style="@style/text_s_24_c_000000_g_center"
+            android:layout_marginLeft="@dimen/divider_px10"
+            android:text="我已经阅读并同意相关协议"
+            android:textSize="@dimen/divider_px24" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/divider_px34"
+        android:src="@mipmap/icon_next" />
+</LinearLayout>

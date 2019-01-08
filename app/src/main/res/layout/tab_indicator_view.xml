@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="98px"
+    android:background="@color/theme"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tab_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="98px"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/tab_icon"
+                android:layout_width="@dimen/divider_px60"
+                android:layout_height="@dimen/divider_px60"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:layout_marginTop="@dimen/divider_px10"
+                android:scaleType="center"
+                android:src="@drawable/tab_one_selector" />
+
+            <TextView
+                android:id="@+id/tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@drawable/tab_text_color"
+                android:textSize="@dimen/divider_px22"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/red_point_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tab_ll"
+            android:layout_alignRight="@+id/tab_ll"
+            android:layout_alignTop="@+id/tab_ll"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="@dimen/divider_px5"
+            android:layout_marginTop="@dimen/divider_px8"
+            android:background="@drawable/circle_red"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

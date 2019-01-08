@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/commission_ratio"
+        android:layout_width="@dimen/divider_px400"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:background="@drawable/shap_gree_bac"
+        android:layout_marginTop="@dimen/divider_px40"
+        android:paddingTop="@dimen/divider_px8"
+        android:paddingBottom="@dimen/divider_px8"
+        android:paddingLeft="@dimen/divider_px20"
+        android:paddingRight="@dimen/divider_px20"
+        android:textColor="@color/white"
+        android:text="最高可获奖励  10%" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/share_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/divider_px30"
+        android:paddingLeft="@dimen/divider_px20"
+        android:paddingRight="@dimen/divider_px20"
+        android:scrollbars="none"/>
+   <!-- <com.guiong.up.widget.MyGridView
+        android:id="@+id/share_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/divider_px30"
+        android:layout_weight="1"
+        android:numColumns="4"
+        android:paddingLeft="@dimen/divider_px20"
+        android:paddingRight="@dimen/divider_px20"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip" />-->
+
+    <include layout="@layout/line_div"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingTop="@dimen/divider_px30"
+        android:paddingBottom="@dimen/divider_px20"
+        android:gravity="center"
+        android:paddingRight="@dimen/divider_px40"
+        android:paddingLeft="@dimen/divider_px40"
+        android:textColor="@color/deteal_text"
+        android:text="取消"/>
+
+</LinearLayout>
